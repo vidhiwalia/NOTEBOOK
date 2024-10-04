@@ -29,10 +29,10 @@ export default function Navbar() {
 
 
                     </ul>
-                    {/* {!localStorage.getItem('token') ?<form >
+                    {!localStorage.getItem('token') ?<form >
                         <Link class="btn btn-primary mx-3" to="/login" role="button">Login</Link>
                         <Link class="btn btn-primary" to="/signup" role="button">SignUp</Link>
-                    </form> : <button onClick={handleLogout} className='btn btn-primary'> Logout</button>} */}
+                    </form> : <button onClick={handleLogout} className='btn btn-primary'> Logout</button>}
                 </div>
             </div>
         </nav>
