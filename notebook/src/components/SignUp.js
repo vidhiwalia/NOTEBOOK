@@ -107,4 +107,6 @@ export default function SignUp(props) {
       </div>
     </div>
   )
-}
+} 
+ 
+

@@ -13,7 +13,7 @@ export default function Notes(props) {
             fetchnotes()
         }
         else {
-            navigate("/login")
+            navigate("/frontpage")
         }
 
     }, [])
