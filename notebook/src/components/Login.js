@@ -49,37 +49,37 @@ export default function Login(props) {
         //         <button type="submit" className="btn btn-primary" >Submit</button>
         //     </form>
         // </div>
-        <div class="container">
-            <div class="row login-container">
+        <div className="container">
+            <div className="row login-container">
 
                 {/*Left side (Image or graphic)*/}
-                <div class="col-md-6 p-0">
-                    <div class="login-image">
+                <div className="col-md-6 p-0">
+                    <div className="login-image">
                         {/* You can place the surfing image here */}
-                        <img src="login image.jpg" class="img-fluid" alt="Surfing Image" />
+                        <img src="login image.jpg" className="img-fluid" alt="Surfing Image" />
                     </div>
                 </div>
 
                 {/*Right side (Login form)*/}
-                <div class="col-md-6">
-                    <div class="login-form mt-4">
+                <div className="col-md-6">
+                    <div className="login-form mt-4">
 
                         <form onSubmit={handlesubmit}>
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">Email address</label>
-                                <input type="email" class="form-control" name="email" id="email" value={credentials.email} onChange={onchange} aria-describedby="emailHelp" />
+                                <input type="email" className="form-control" name="email" id="email" value={credentials.email} onChange={onchange} aria-describedby="emailHelp" required/>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="password" className="form-label">Password</label>
-                                <input type="password" className="form-control" name="password" value={credentials.password} onChange={onchange} id="password" />
+                                <input type="password" className="form-control" name="password" value={credentials.password} onChange={onchange} id="password" required/>
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="rememberMe" />
-                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            <div className="mb-3 form-check">
+                                <input type="checkbox" className="form-check-input" id="rememberMe" />
+                                <label className="form-check-label" for="rememberMe">Remember me</label>
                             </div>
-                            <button type="submit" className="btn btn-primary " >Login</button>
+                            <button disabled={credentials.password.length < 4} type="submit" className="btn btn-primary " >Login</button>
                         </form>
-                        <div class="d-flex justify-content-between mt-3">
+                        <div className="d-flex justify-content-between mt-3">
                             <a href="#" class="text-decoration-none text-small">Forgot Password?</a>
                             <a href="#" class="text-decoration-none text-small">Sign Up</a>
                         </div>
