@@ -15,7 +15,6 @@
     "commander": "^11.1.0",
     "commondir": "^1.0.1",
     "concat-map": "^0.0.1",
-    
     "email-addresses": "^5.0.0",
     "escape-string-regexp": "^1.0.5",
     "filename-reserved-regex": "^2.0.0",
@@ -53,12 +52,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-   "build" : "react-scripts build"
-    
-    
-  
-    
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
